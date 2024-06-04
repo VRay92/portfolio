@@ -9,7 +9,7 @@ interface ICard3Props {
 
 const Card3: React.FunctionComponent<ICard3Props> = (props) => {
   return (
-    <div className="min-w-[400px]">
+    <div className="min-w-[300px]">
       <a href={props.projectUrl} className="relative ">
         <img
           src={props.imageUrl}

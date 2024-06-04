@@ -52,9 +52,11 @@ export default function Home() {
         id="navbar"
         className="fixed z-50 flex justify-between bg-[#454545] items-center w-full max-w-[1920px] shadow-lg top-0  px-4 py-[0.5rem] md:px-[8rem]"
       >
-        <img id="logo" alt="logo" src="logo.png" className="md:mx-0" />
+        <div className="w-[160px]">
+          <img id="logo" alt="logo" src="logo.png" className="md:mx-0" />
+        </div>
         <RxHamburgerMenu
-          size={40}
+          size={30}
           onClick={() => setOpenMenu(!openMenu)}
           className="text-white cursor-pointer md:hidden absolute right-4"
         />
@@ -152,26 +154,32 @@ export default function Home() {
       )}
       <section
         id="hero-section"
-        className="flex md:flex-row flex-col md:justify-between px-4 md:px-[8rem] pt-[13rem] md:pt-[15rem] md:pb-[8rem]"
+        className="flex md:flex-row flex-col md:justify-between px-4 md:px-[8rem] pt-[10rem] md:pt-[15rem] md:pb-[8rem]"
       >
         <div id="left-container" className=" md:w-1/2 w-full">
           <div id="introduction" className="text-white ">
             <h2 className="text-xl text-center md:text-left">
               Hello, <span className="text-[rgb(244,8,65)]">{`I'm`}</span>
             </h2>
-            <strong className="font-extrabold text-5xl md:text-7xl flex justify-center md:justify-start">
+            <strong className="font-extrabold text-[45px] md:text-7xl flex justify-center md:justify-start">
               Adrian Irawan
             </strong>
             <h2 className="text-lg text-center md:text-left">
               Web Developer and Graphic Designer
             </h2>
-            <p className="md:text-lg pb-[50px] md:mx-0  md:mt-0 mt-10 text-justify md:text-left">
+            <p className="md:text-lg pb-[50px] md:mx-0 hidden md:block md:mt-0 mt-10 text-justify md:text-left">
               a passionate individual currently immersed in the dynamic world of
               web development. As an aspiring Full Stack Web Developer and
               Graphic Designer, I am constantly exploring the vast realm of
               digital creativity, with a focus on Front-End Development. This
               aligns with the rapidly increasing demand for digital jobs in the
               market. I primarily utilized JavaScript as my programming
+              language, in conjunction with other libraries and frameworks
+              including React JS, Next JS, TypeScript, and Node JS.
+            </p>
+            <p className="md:text-lg pb-[50px] md:mx-0 block md:hidden  md:mt-0 mt-10 text-center md:text-left">
+              a passionate individual currently immersed in the dynamic world of
+              web development. I primarily utilized JavaScript as my programming
               language, in conjunction with other libraries and frameworks
               including React JS, Next JS, TypeScript, and Node JS.
             </p>
@@ -426,11 +434,11 @@ export default function Home() {
       </div>
       <section
         id="my-resume"
-        className="text-white mb-20 mt-20 flex 2xl:flex-row flex-col relative w-fit md:justify-center ml-[11rem]  xl:ml-auto md:mr-56 "
+        className="text-white mb-20 mt-20 flex 2xl:flex-row flex-col relative w-fit md:justify-center ml-[8.8rem] xl:ml-auto md:mr-56 "
       >
         <article id="job-experience" className="w-fit mb-20 md:mr-56">
-          <ol className="relative border-s border-gray-200 dark:border-gray-700">
-            <li className="mb-20 ms-8">
+          <ol className="relative border-s border-gray-200 dark:border-gray-700 w-[200px] md:w-auto">
+            <li className="mb-20 ms-5">
               <div className="absolute size-10 -left-[21px] top-0 text-[rgb(40,40,40)] bg-gray-200 rounded-full pl-1 pt-1 mt-2.5 text-[28px] border border-white dark:border-gray-900 dark:bg-gray-700">
                 <BsBriefcaseFill />
               </div>
@@ -441,7 +449,7 @@ export default function Home() {
             </li>
             <li className="mb-10 ms-4">
               <div className="absolute size-4 -left-2 bg-gray-200 rounded-full mt-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-              <time className="absolute -left-36 mb-1 text-lg font-normal leading-none mt-2 text-white dark:text-gray-500">
+              <time className="absolute -left-32 mb-1 tracking-tighter text-lg font-normal leading-none mt-2 text-white dark:text-gray-500">
                 2020 - Present
               </time>
               <div className="text-white ml-4 md:block hidden">
@@ -519,7 +527,7 @@ export default function Home() {
         </article>
         <article id="education" className="">
           <ol className="relative border-s border-gray-200 dark:border-gray-700 md:mt-0 mt-24 ">
-            <li className="mb-20 ms-8">
+            <li className="mb-20 ms-5">
               <div className="absolute size-10 -left-[21px] top-0 text-[rgb(40,40,40)] bg-gray-200 rounded-full pl-1 pt-1 mt-2.5 text-[28px] border border-white dark:border-gray-900 dark:bg-gray-700">
                 <GiGraduateCap className="size-8" />
               </div>
@@ -530,7 +538,7 @@ export default function Home() {
             </li>
             <li className="mb-10 ms-4">
               <div className="absolute size-4 -left-2 bg-gray-200 rounded-full mt-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-              <time className="absolute -left-36 mb-1 text-lg font-normal leading-none mt-2 text-white dark:text-gray-500">
+              <time className="absolute -left-32 mb-1 text-lg tracking-tighter font-normal leading-none mt-2 text-white dark:text-gray-500">
                 2024 - Present
               </time>
               <div className="text-white ml-4 md:block hidden">
