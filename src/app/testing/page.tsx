@@ -12,13 +12,13 @@ const Testing: React.FunctionComponent<ITestingProps> = (props) => {
     <>
       <nav
         id="navbar"
-        className="fixed z-50 flex justify-between bg-[#454545] items-center h-[100px] w-full shadow-lg top-0  py-[3rem] md:px-[8rem]"
+        className="fixed z-50 flex justify-between bg-[#454545] items-center h-[100px] w-full shadow-lg top-0 py-[10rem] md:px-[8rem]"
       >
-        <img id="logo" src="logo.png" className="md:mx-0 mx-4" />
+        <img id="logo" src="logo.png" className="md:mx-0 ml-10" />
         <RxHamburgerMenu
           size={40}
           onClick={() => setOpenMenu(!openMenu)}
-          className="text-white cursor-pointer md:hidden mr-4"
+          className="text-white cursor-pointer md:hidden"
         />
         <ul className="text-white md:flex hidden gap-[4rem] transition-opacity duration-300">
           <li className="relative">

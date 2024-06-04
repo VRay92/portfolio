@@ -136,10 +136,10 @@ strong {
 .card1 {
   box-shadow: 3px 2px 10px 10px rgb(35 35 35);
   padding: 30px;
-  min-width: 15rem;
   margin-top: 30px;
   background-color: rgb(51 51 51);
   border-radius: 10px;
+  min-width: 400px;
 }
 
 /* #flexbox1 {
@@ -267,52 +267,6 @@ h3 {
 #description3 {
   text-align: center;
   padding-top: 8rem;
-}
-
-.vl1 {
-  border-left: 6px solid white;
-  height: 73px;
-  background-color: transparent;
-  position: absolute;
-  left: 509px;
-  top: 344px;
-}
-
-.vl2 {
-  border-left: 6px solid white;
-  height: 73px;
-  background-color: transparent;
-  position: absolute;
-  left: 509px;
-  top: 638px;
-}
-
-.vl3 {
-  border-left: 6px solid white;
-  height: 73px;
-  background-color: transparent;
-  position: absolute;
-  top: 932px;
-  left: 509px;
-}
-
-#education {
-  width: 550px;
-}
-#circle1,
-#circle2,
-#circle3,
-#circle4,
-#circle5,
-#circle6 {
-  position: absolute;
-  left: 500px;
-}
-
-#job-experience {
-  display: flex;
-  width: 800px;
-  flex-direction: column;
 }
 
 .card2 {

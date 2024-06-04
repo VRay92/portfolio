@@ -4,6 +4,7 @@ import { Poppins } from "next/font/google";
 import "./globals.css";
 import { ChakraProvider } from "@chakra-ui/react";
 import { Providers } from "./providers";
+import Container from "./component/Container";
 
 const inter = Inter({ subsets: ["latin"] });
 const poppins = Poppins({
@@ -33,7 +34,10 @@ export default function RootLayout({
       </head>
 
       <body className={poppins.className}>
-        <Providers>{children}</Providers>
+        <Container>
+          {" "}
+          <Providers>{children}</Providers>
+        </Container>
       </body>
     </html>
   );

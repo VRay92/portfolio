@@ -50,15 +50,15 @@ export default function Home() {
     <main className="  bg-[#282828]">
       <nav
         id="navbar"
-        className="fixed z-50 flex justify-between bg-[#454545] items-center h-[100px] w-full shadow-lg top-0  px-0 py-[3rem] md:px-[8rem]"
+        className="fixed z-50 flex justify-between bg-[#454545] items-center w-full max-w-[1920px] shadow-lg top-0  px-4 py-[0.5rem] md:px-[8rem]"
       >
-        <img id="logo" alt="logo" src="logo.png" className="md:mx-0 ml-2" />
+        <img id="logo" alt="logo" src="logo.png" className="md:mx-0" />
         <RxHamburgerMenu
           size={40}
           onClick={() => setOpenMenu(!openMenu)}
-          className="text-white cursor-pointer md:hidden absolute right-0 mr-4"
+          className="text-white cursor-pointer md:hidden absolute right-4"
         />
-        <ul className="text-white md:flex hidden gap-[4rem]">
+        <ul className="text-white xl:flex hidden gap-[4rem]">
           <li className="relative">
             <a href="#" className="relative group" onClick={backToTop}>
               HOME
@@ -255,7 +255,7 @@ export default function Home() {
       </div>
       <section
         id=""
-        className="mx-4 md:grid md:grid-cols-3 md:auto-rows-auto md:gap-8 text-justify md:mx-[8rem]"
+        className="mx-4 md:grid md:grid-cols-2 xl:grid-cols-3 md:auto-rows-auto md:gap-8 text-justify md:mx-[8rem]"
       >
         <div className="card1">
           <span className=" ">
@@ -307,8 +307,8 @@ export default function Home() {
             Vite revolutionizes web development with blazing-fast build times
             and instant hot module replacement, boosting developer efficiency.
             Its innovative development server and native ES module support
-            streamline modern JavaScript development, enabling rapid iteration
-            and enhancing overall project performance.
+            modern JavaScript development, enabling rapid iteration and
+            enhancing overall project performance.
           </p>
         </div>
         <div className="card1">
@@ -317,11 +317,11 @@ export default function Home() {
           </span>
           <h3 className="text-white text-4xl font-bold mt-8">Node JS</h3>
           <p className="text-white">
-            Node.js revolutionizes server-side JavaScript with its scalable,
-            event-driven architecture, ideal for real-time applications. Its
-            vast ecosystem and non-blocking I/O model ensure high performance,
-            empowering developers to build robust and flexible backend
-            solutions.
+            Node.js revolutionizes the server-side JavaScript with its scalable,
+            event-driven architecture, and ideal for the real-time applications.
+            Its vast ecosystem and non-blocking I/O model ensure high
+            performance, empowering developers to build robust and flexible
+            backend.
           </p>
         </div>
         <div className="card1">
@@ -355,7 +355,7 @@ export default function Home() {
         </p>
       </div>
       <div className="container mx-auto p-4 mb-[8rem] mt-10">
-        <div className="grid grid-cols-1 md:grid-cols-3 auto-rows-auto gap-8 text-justify">
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 auto-rows-auto  auto-cols-auto gap-8 text-justify">
           <Card3
             imageUrl="company-profile.png"
             title="PT. Jawa Agrindo Internasional"
@@ -426,10 +426,10 @@ export default function Home() {
       </div>
       <section
         id="my-resume"
-        className="text-white mb-20 mt-20 flex md:flex-row flex-col relative"
+        className="text-white mb-20 mt-20 flex 2xl:flex-row flex-col relative w-fit md:justify-center ml-[11rem]  xl:ml-auto md:mr-56 "
       >
-        <article id="job-experience" className="ml-0 md:ml-[8rem]">
-          <ol className="relative border-s border-gray-200 dark:border-gray-700 ml-40 md:ml-56">
+        <article id="job-experience" className="w-fit mb-20 md:mr-56">
+          <ol className="relative border-s border-gray-200 dark:border-gray-700">
             <li className="mb-20 ms-8">
               <div className="absolute size-10 -left-[21px] top-0 text-[rgb(40,40,40)] bg-gray-200 rounded-full pl-1 pt-1 mt-2.5 text-[28px] border border-white dark:border-gray-900 dark:bg-gray-700">
                 <BsBriefcaseFill />
@@ -452,6 +452,7 @@ export default function Home() {
                   description="Design label, packaging, and other promotional media such as banner, brochure, calendar. Coordination with printing company from pre-design to post-production. Ensure the progress to meet desired timeline."
                 />
               </div>
+              {/* SHORT DESCRIPTION FOR MOBILE */}
               <div className="text-white text-base ml-4 md:hidden block w-[200px]">
                 <h1 className="font-bold">Graphic Designer</h1>
                 <h1>PT. Jawa Agrindo Internasional</h1>
@@ -470,6 +471,7 @@ export default function Home() {
                   description="Manage the operations of manufacturing project by developing plans and procedures, organize and oversee all aspects of the project around the factory by tracking expenses, and supervising all personnel."
                 />
               </div>
+              {/* SHORT DESCRIPTION FOR MOBILE */}
               <div className="text-white text-base ml-4 md:hidden block w-[180px]">
                 <h1 className="font-bold">Project Development</h1>
                 <h1>PT. Jawa Agrindo Internasional</h1>
@@ -488,6 +490,7 @@ export default function Home() {
                   description="Design residential, commercial building and create shop-drawing including architectural details, electrical and ME. Control check of the building progress. Make building check-list for contractor to ensure the specification required by the owner."
                 />
               </div>
+              {/* SHORT DESCRIPTION FOR MOBILE */}
               <div className="text-white text-base ml-4 md:hidden block w-[180px]">
                 <h1 className="font-bold">Project Architect</h1>
                 <h1>PT. Abdael Nusa</h1>
@@ -506,6 +509,7 @@ export default function Home() {
                   description="Create concept, layout, and facade design. Create shop-drawing including architectural details, electrical and ME. Control check of the building progress. Discuss with the owner, client, and other stakeholders."
                 />
               </div>
+              {/* SHORT DESCRIPTION FOR MOBILE */}
               <div className="text-white text-base ml-4 md:hidden block w-[180px]">
                 <h1 className="font-bold">Project Architect</h1>
                 <h1>CV. Bangun Sentosa Jaya</h1>
@@ -514,7 +518,7 @@ export default function Home() {
           </ol>
         </article>
         <article id="education" className="">
-          <ol className="relative border-s border-gray-200 dark:border-gray-700 ml-40 md:ml-56 md:mt-0 mt-24">
+          <ol className="relative border-s border-gray-200 dark:border-gray-700 md:mt-0 mt-24 ">
             <li className="mb-20 ms-8">
               <div className="absolute size-10 -left-[21px] top-0 text-[rgb(40,40,40)] bg-gray-200 rounded-full pl-1 pt-1 mt-2.5 text-[28px] border border-white dark:border-gray-900 dark:bg-gray-700">
                 <GiGraduateCap className="size-8" />
@@ -537,6 +541,7 @@ export default function Home() {
                   description="Purwadhika Digital School's curriculum covers both front-end and back-end technologies, ensuring that students gain proficiency in every aspect of web development. This includes languages such as HTML, CSS, JavaScript, React, NextJS for front-end development, and languages like Node.js, Express, MySQL for back-end development."
                 />
               </div>
+              {/* SHORT DESCRIPTION FOR MOBILE */}
               <div className="text-white text-base ml-4 md:hidden block w-[180px]">
                 <h1 className="font-bold">Purwadhika Job Connector</h1>
                 <h1>Full-Stack Development</h1>
@@ -555,6 +560,8 @@ export default function Home() {
                   description="The Architecture Program integrates architectural design, building technology, history, and theory of architecture, as well as urban and settlement environments."
                 />
               </div>
+
+              {/* SHORT DESCRIPTION FOR MOBILE */}
               <div className="text-white text-base ml-4 md:hidden block w-[180px]">
                 <h1 className="font-bold">Petra Christian University</h1>
                 <h1>Bachelor of Architecture</h1>
@@ -587,7 +594,8 @@ export default function Home() {
               <IoMapOutline size={50}></IoMapOutline>
             </span>
             <br />
-            <h4>Surabaya,Indonesia</h4>
+            <h4 className="xl:block hidden">Surabaya,Indonesia</h4>
+            <h4 className="xl:hidden block">Surabaya</h4>
           </div>
           <div className="card3 h-[177px]">
             <span id="phone" className="material-symbols-outlined text-white">
@@ -601,7 +609,11 @@ export default function Home() {
               <MdMailOutline size={50}></MdMailOutline>
             </span>
             <br />
-            <h4>adrian.irawan92@gmail.com</h4>
+            <h4>
+              adrian.irawan92
+              <br />
+              @gmail.com
+            </h4>
           </div>
           <div className="card3 h-[177px]">
             <span id="check" className="material-symbols-outlined text-white">
@@ -700,7 +712,7 @@ export default function Home() {
               required
             ></textarea>
             <button
-              className="rounded-lg cursor pointer text-center bg-[#f40841] w-full text-xl mt-3  h-[3.5rem]"
+              className="rounded-lg cursor pointer text-center bg-[#f40841] w-full text-xl h-[3.5rem]"
               onClick={() => {
                 const query = `*Nama: ${data.name}*%0A*Email: ${data.email}*%0A*No.Telp: ${data.phone}*%0A*Subject: ${data.subject}*%0A%0A ${data.message}`;
                 window.open(`https://wa.me/+6282141657805?text=${query}`);
@@ -767,10 +779,11 @@ export default function Home() {
         </article>
         <article
           id="right-contact-with-me"
-          className="w-full mt-10 p-4 shadow-xl shadow-[#232323] space-y-4 bg-[#333333] rounded-lg"
+          className="w-full mt-10 p-4 pb-10 shadow-xl shadow-[#232323] space-y-4 bg-[#333333] rounded-lg"
         >
           <form id="form" action="/submit_form" method="post" className="">
-            <div id="name-phone" className="flex flex-col mb-4 space-y-4">
+            <h1 className="text-center text-xl font-bold">Send Me Message</h1>
+            <div id="name-phone" className="flex flex-col mb-4 space-y-2 mt-10">
               <label htmlFor="name">Enter Your Name</label>
               <input
                 type="text"
@@ -847,7 +860,7 @@ export default function Home() {
               required
             ></textarea>
             <button
-              className="rounded-lg cursor pointer text-center bg-[#f40841] w-full text-xl mt-3 pt-3 h-[3.5rem]"
+              className="rounded-lg cursor pointer text-center bg-[#f40841] w-full text-xl mt-3 h-[3.5rem]"
               onClick={() => {
                 const query = `*Nama: ${data2.name}*%0A*Email: ${data2.email}*%0A*No.Telp: ${data2.phone}*%0A*Subject: ${data2.subject}*%0A%0A ${data2.message}`;
                 window.open(`https://wa.me/+6282141657805?text=${query}`);
