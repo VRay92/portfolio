@@ -50,7 +50,7 @@ export default function Home() {
     <main className="  bg-[#282828]">
       <nav
         id="navbar"
-        className="fixed z-50 flex justify-between bg-[#454545] items-center w-full max-w-[1920px] shadow-lg top-0  px-4 py-[0.5rem] md:px-[8rem]"
+        className="fixed z-50 flex justify-between bg-[#454545] items-center w-full max-w-[1920px] shadow-lg top-0  px-4 py-[1rem] md:px-[8rem]"
       >
         <div className="w-[160px]">
           <img id="logo" alt="logo" src="logo.png" className="md:mx-0" />
@@ -100,7 +100,7 @@ export default function Home() {
 
         {openMenu && (
           <>
-            <div className="w-full  text-white text-center absolute top-[96px] z-[20] left-0 md:hidden">
+            <div className="w-full  text-white text-center absolute top-[77px] z-[20] left-0 md:hidden">
               <div className="flex flex-col align-middle">
                 <a
                   href="#"
