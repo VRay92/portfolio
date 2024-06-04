@@ -161,13 +161,13 @@ export default function Home() {
             <h2 className="text-xl text-center md:text-left">
               Hello, <span className="text-[rgb(244,8,65)]">{`I'm`}</span>
             </h2>
-            <strong className="font-extrabold text-[45px] md:text-7xl flex justify-center md:justify-start">
+            <strong className="font-extrabold text-[45px] md:text-6xl flex justify-center md:justify-start">
               Adrian Irawan
             </strong>
             <h2 className="text-lg text-center md:text-left">
               Web Developer and Graphic Designer
             </h2>
-            <p className="md:text-lg pb-[50px] md:mx-0 hidden md:block md:mt-0 mt-10 text-justify md:text-left">
+            <p className="md:text-lg pb-[50px] md:mx-0 hidden md:block md:mt-0 mt-10 text-justify">
               a passionate individual currently immersed in the dynamic world of
               web development. As an aspiring Full Stack Web Developer and
               Graphic Designer, I am constantly exploring the vast realm of
