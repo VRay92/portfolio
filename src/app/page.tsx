@@ -382,7 +382,7 @@ export default function Home() {
             Developed a landing page for Real Estate Company with Islamic
             Concept in Surabaya. This website is made in collaboration with
             Digital Marketing Team, UI/UX , and Data Science Team in Purwadika
-            Digital School. Created by using Next JS, Typescript, Tailwind
+            Digital School. Created using Next JS, Typescript, Tailwind
           </Card3>
           <Card3
             imageUrl="expense-tracker.png"
