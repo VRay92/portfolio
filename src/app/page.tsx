@@ -379,10 +379,10 @@ export default function Home() {
             title="Mulia Village Juanda"
             projectUrl="https://mulia-village.vercel.app/"
           >
-            Mulia Village Juanda Premium Residence Surabaya - Sidoarjo.
-            Presenting a residence with an Islamic concept both in the
-            environment and transactions. This website is made by team consist
-            of 3 people. Made using NextJS, TypeScript, Tailwind.
+            Developed a landing page for Real Estate Company with Islamic
+            Concept in Surabaya. This website is made in collaboration with
+            Digital Marketing Team, UI/UX , and Data Science Team in Purwadika
+            Digital School. Created by using Next JS, Typescript, Tailwind
           </Card3>
           <Card3
             imageUrl="expense-tracker.png"
