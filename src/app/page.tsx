@@ -371,8 +371,8 @@ export default function Home() {
           >
             A company profile website for an Agricultural Company in East Java.
             This project is created by using Next JS, Typescript, Tailwind as
-            framework. In this project, API call is used to generate dummy data
-            for team member.
+            framework. Teams Page: Showcases team members, their expertise, and
+            contact information (fetched using API from randomuser.me)
           </Card3>
           <Card3
             imageUrl="mulia-village.png"
@@ -382,7 +382,7 @@ export default function Home() {
             Developed a landing page for Real Estate Company with Islamic
             Concept in Surabaya. This website is made in collaboration with
             Digital Marketing Team, UI/UX , and Data Science Team in Purwadika
-            Digital School. Created using Next JS, Typescript, Tailwind
+            Digital School. Tech stack: Next.js, TypeScript, Tailwind CSS, Axios
           </Card3>
           <Card3
             imageUrl="expense-tracker.png"
@@ -390,9 +390,9 @@ export default function Home() {
             projectUrl="https://vray92.github.io/money-tracker/money-tracker.mp4"
           >
             MoneyTrackr is a web application for tracking users income and
-            expenses. The application allows users to record their financial
-            transactions, organize by category, and view a list of transactions.
-            Made by using React, NextJS, MySQL as database.
+            expenses. Features: implement CRUD functions (Create, Read, Update,
+            Delete). Made by using React, NextJS, MySQL as database. Utilizes
+            UseContext React Hook for global state management.
           </Card3>
           <Card3
             imageUrl="e-commerce.png"
