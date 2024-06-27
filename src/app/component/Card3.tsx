@@ -16,7 +16,7 @@ const Card3: React.FunctionComponent<ICard3Props> = (props) => {
           alt="cardimage"
           className="rounded-lg w-full"
         />
-        <div className="group absolute inset-0 flex justify-center items-center bg-black bg-opacity-0 hover:bg-opacity-50 hover:cursor-pointer duration-500 ">
+        <div className="group rounded-lg absolute inset-0 flex justify-center items-center bg-black bg-opacity-0 hover:bg-opacity-50 hover:cursor-pointer duration-500 ">
           <h1 className="text-white duration-500 opacity-0 group-hover:opacity-100 font-bold">
             Visit Page
           </h1>

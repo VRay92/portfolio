@@ -15,6 +15,7 @@ import Card3 from "./component/Card3";
 import Animation from "./component/Animation";
 import { useState, useEffect } from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
+import Card4 from "./component/Card4";
 
 export default function Home() {
   const [data, setData] = useState({
@@ -43,8 +44,6 @@ export default function Home() {
   useEffect(() => {
     setInterval(() => setLoading(false), 1500);
   }, []);
-  console.log(data);
-  console.log(data2);
 
   return (
     <main className="  bg-[#282828]">
@@ -364,6 +363,13 @@ export default function Home() {
       </div>
       <div className="container mx-auto p-4 mb-[8rem] mt-10">
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 auto-rows-auto  auto-cols-auto gap-8 text-justify">
+          <Card4 imageUrl="YOLOthumbnail.png" title="YOLO.id" projectUrl="">
+            YOLO.id is a simple and functional event management platform that
+            allows event organizers to create and promote events, while
+            attendees can browse and buy ticket for events (involves CRUD
+            function). Tech Stack: REST API, Next.js, TypeScript, Prisma ORM,
+            Midtrans Payment Gateway.
+          </Card4>
           <Card3
             imageUrl="company-profile.png"
             title="PT. Jawa Agrindo Internasional"
@@ -410,14 +416,6 @@ export default function Home() {
           >
             Simple calculator to count the area and perimeter of a Triangle.
             Made using HTML, CSS , and Javascript
-          </Card3>
-          <Card3
-            imageUrl="stok-data.png"
-            title="Stock Data"
-            projectUrl="https://vray92.github.io/Stok-Data/"
-          >
-            A simulation of database management using prompt and alert. Made
-            using HTML and Javascript.
           </Card3>
         </div>
       </div>
