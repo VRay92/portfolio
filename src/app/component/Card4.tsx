@@ -16,7 +16,9 @@ const Card4: React.FunctionComponent<ICard4Props> = (props) => {
     <div className="min-w-[300px]">
       {openModal && (
         <div className="fixed inset-0 z-50 flex items-center justify-center  bg-black bg-opacity-50 backdrop-blur-sm backdrop-filter">
-          <div className={`h-[800px] w-[1500px] relative`}>
+          <div
+            className={`w-full h-[300px] p-3 md:h-[800px] md:w-[1500px] relative`}
+          >
             <Carousel slide={false}>
               <img src="YOLO1.png" alt="YOLO1" />
               <img src="YOLO2.png" alt="YOLO2" />
@@ -28,7 +30,7 @@ const Card4: React.FunctionComponent<ICard4Props> = (props) => {
               <img src="YOLO11.png" alt="YOLO11" />
             </Carousel>
             <button
-              className="absolute top-5 -right-7 size-14 rounded-full bg-black border-2 border-white text-white font-semibold text-xl"
+              className="absolute top-0 right-0 md:top-5 md:-right-7 size-8 md:size-14 rounded-full bg-black border-2 border-white text-white font-semibold text-sm md:text-xl"
               onClick={() => setOpenModal(false)}
             >
               X

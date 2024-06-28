@@ -16,7 +16,7 @@ const Card5: React.FunctionComponent<ICard5Props> = (props) => {
     <div className="min-w-[300px]">
       {openModal && (
         <div className="fixed inset-0 z-50 flex items-center justify-center  bg-black bg-opacity-50 backdrop-blur-sm backdrop-filter">
-          <div className={`h-[600px] w-[520px] relative`}>
+          <div className={`h-[550px] w-[470px] relative`}>
             <Carousel slide={false}>
               <img
                 className="h-full object-contain"
@@ -45,7 +45,7 @@ const Card5: React.FunctionComponent<ICard5Props> = (props) => {
               />
             </Carousel>
             <button
-              className="absolute top-5 -right-7 size-14 rounded-full bg-black border-2 border-white text-white font-semibold text-xl"
+              className="absolute -top-5 right-5 size-14 rounded-full bg-black border-2 border-white text-white font-semibold text-xl"
               onClick={() => setOpenModal(false)}
             >
               X
