@@ -16,6 +16,7 @@ import Animation from "./component/Animation";
 import { useState, useEffect } from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
 import Card4 from "./component/Card4";
+import Card5 from "./component/Card5";
 
 export default function Home() {
   const [data, setData] = useState({
@@ -390,7 +391,7 @@ export default function Home() {
             Digital Marketing Team, UI/UX , and Data Science Team in Purwadika
             Digital School. Tech stack: Next.js, TypeScript, Tailwind CSS, Axios
           </Card3>
-          <Card3
+          <Card5
             imageUrl="expense-tracker.png"
             title="Money Tracker"
             projectUrl="https://vray92.github.io/money-tracker/money-tracker.mp4"
@@ -399,7 +400,7 @@ export default function Home() {
             expenses. Features: implement CRUD functions (Create, Read, Update,
             Delete). Made by using React, NextJS, MySQL as database. Utilizes
             UseContext React Hook for global state management.
-          </Card3>
+          </Card5>
           <Card3
             imageUrl="e-commerce.png"
             title="Shop Display"
