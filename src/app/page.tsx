@@ -43,7 +43,7 @@ export default function Home() {
   };
 
   useEffect(() => {
-    setInterval(() => setLoading(false), 1500);
+    setTimeout(() => setLoading(false), 1500);
   }, []);
 
   return (
