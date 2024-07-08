@@ -16,7 +16,6 @@ const Card5: React.FunctionComponent<ICard5Props> = (props) => {
     <div className="min-w-[300px]">
       {openModal && (
         <div className="fixed inset-0 z-50 flex items-center justify-center  bg-black bg-opacity-50 backdrop-blur-sm backdrop-filter">
-
           <div
             className={`h-[450px] w-[370px] md:h-[550px] md:w-[470px] relative`}
           >
